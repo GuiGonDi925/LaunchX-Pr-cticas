@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="styles.css" >
+    <title>Pedidos</title>
+</head>
+<body>
+    <section class="container">
+        <h2>Selecciona el tamaño de tu pastel</h2>
+        <br>
+        <label for="vol">Raciones:</label>
+        <input type="range" id="vol" name="vol" min="10" max="50" value="10" step="5"  oninput="this.nextElementSibling.value = this.value">
+        <output>10</output>
+        </section>
+        <hr>
+    <section class="container">
+        <div class="container-div">
+            <h2>Selecciona tu tipo de masa</h2>
+        </div>
+        <div class="container-radio">
+            <input type="radio" id="americano" name="masas" value="americano">
+            <label for="americano">Americano</label><br><br>
+
+            <input type="radio" id="3leches" name="masas" value="3leches">
+            <label for="3leches">3 Leches</label><br>
+        </div>
+    </section>
+    <hr>
+    <section class="container">
+        <div class="container-div">
+            <h2>Selecciona tu tipo de relleno</h2>
+        </div>
+        <div class="container-radio">
+            <input type="radio" id="fresa" name="relleno" value="fresa">
+            <label for="fresa">Mermelada de fresa</label><br><br>
+
+            <input type="radio" id="durazno" name="relleno" value="durazno">
+            <label for="durazno">Mermelada de durazno</label><br><br>
+
+            <input type="radio" id="piña" name="relleno" value="piña">
+            <label for="piña">Mermelada de piña</label><br><br>
+
+            <input type="radio" id="chantilly" name="relleno" value="chantilly" >
+            <label for="chantilly" >Chantilly</label><br>
+
+        </div>
+    </section>
+    <hr>
+    <section class="container">
+        <div class="container-div">
+            <h2>Selecciona la cobertura</h2>
+        </div>
+        <div  class="container-radio">
+            <input type="radio" id="Buttercream" name="cobertura" value="Buttercream">
+            <label for="Buttercream">Buttercream</label><br><br>
+
+            <input type="radio" id="chantilly" name="cobertura" value="chantilly">
+            <label for="chantilly">Chantilly</label><br><br>
+
+            <input type="radio" id="cajeta" name="cobertura" value="cajeta">
+            <label for="cajeta">Cajeta</label><br><br>
+
+            <input type="radio" id="Fondant" name="cobertura" value="Fondant">
+            <label for="Fondant">Fondant</label>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container-div">
+            <h2>Selecciona los toppings</h2>
+        </div>
+        <div  class="container-radio">
+            <input type="checkbox" id="Durazno" name="toppings" value="Durazno">
+            <label for="Durazno">Durazno</label><br><br>
+
+            <input type="checkbox" id="fresa" name="toppings" value="fresa">
+            <label for="fresa">Fresa</label><br><br>
+
+            <input type="checkbox" id="nueces" name="toppings" value="nueces">
+            <label for="nueces">Nueces</label><br><br>
+
+            <input type="checkbox" id="milhojas" name="toppings" value="milhojas">
+            <label for="milhojas" >Mil Hojas</label>
+        </div>
+    </section>
+    <hr>
+    <section class="container-form">
+        <div class="container-div">
+            <h2>Ingresa datos adicionales o de referencia</h2>
+        </div>
+        <div class="input-group">
+            <input required="" type="text"  name="referencia" autocomplete="off" class="input-name">
+            <label class="user-label">Datos adicionales</label>
+        </div>
+        <div>
+            <label>Selecciona una imagen de referencia</label> <br><br>
+            <input type="file" id ="referenciaimg" name="referenciaimg" accept="image/*">
+        </div>
+    </section>
+    <hr>
+    <section class="container-form">
+        <div class="container-div">
+            <h2>Ingresa tus datos de contacto</h2>
+        </div>
+        <div class="input-group">
+            <input required="" type="text" name="Name" autocomplete="off" class="input-name">
+            <label class="user-label">Nombre Completo</label>
+        </div>
+        <div class="input-group">
+            <input required="" type="tel" name="PhoneNumber" autocomplete="off" class="input-name">
+            <label class="user-label">Teléfono</label>
+        </div>
+        <div class="input-group">
+            <input required="" type="text" name="Adress" autocomplete="off" class="input-name">
+            <label class="user-label">Dirección</label>
+        </div>
+        <div class="input-group">
+            Fecha de entrega
+            <input required="" type="date" name="date" class="input-name" value="none" min="2022-12-01">
+            <label class="user-label"></label>
+        </div>
+    </section>
+    <section class="container">
+        <div >
+            <button>
+                <span class="button_top"> Enviar formulario
+                </span>
+            </button>
+        </div>
+    </section>
+</body>
+</html>
