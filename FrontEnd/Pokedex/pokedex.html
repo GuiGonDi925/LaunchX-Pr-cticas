@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+    <div class="div-pokedex">
+        <div class="div-pokeImg">
+            <div class="div-displayImg">
+                <img id="pokeImg" class="pkmnImg" src="images\blanco.png">
+            </div>
+        </div>
+        <div id="div-pkmnName" class="div-pokeData">
+            <div class = "div-displayData">
+                <label id="pkmnName" class="lb-pkmnName" ></label>
+                <label id="pkmnTypes" class="lb-pkmnName" ></label>
+                <label id="pkmnHeight" class="lb-pkmnName" ></label>
+                <label id="pkmnWeight" class="lb-pkmnName" ></label>
+            </div>
+            <div>
+                <br>
+                <input id="pokeName"placeholder="Nombre o #" >
+                <button id="btn_buscar" onclick="fetchPokemon()" >Buscar</button>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+</footer>
+</html>

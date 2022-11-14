@@ -1,0 +1,75 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div-pokedex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div-pokeImg{
+    background-color: red;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+}
+
+.div-pokeData{
+    background-color: red;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.div-displayImg{
+    background-color: white;
+    height:250px ;
+    width:300px ;
+    display: flex;
+    justify-content: center;
+    border: 15px;
+    border-left: 33px;
+    border-right: 33px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.div-displayData{
+    background-color: white;
+    height:200px ;
+    width:250px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    border: 10px;
+    border-left: 33px;
+    border-right: 33px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.lb-pkmnName{
+    font-size: 16pt;
+    font-style: italic;
+    color: #534949da;
+}
+
+.pkmnImg{
+    height:250px ;
+    width:250px ;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+}
