@@ -35,5 +35,5 @@ btnNo.addEventListener("click",function(e) {
     divGral.style.width = '2000px';
     divGral.style.fontSize = '25px';
     divGral.style.color = 'white';
-    divGral.innerHTML = '<h1>¡NOOOOOOOO! ¿COMO PUPISTE DARLE AL NO?</h1> <br> <img src="https://cdn.memegenerator.es/imagenes/memes/full/27/85/27851711.jpg">'
+    divGral.innerHTML = '<h1>¡NOOOOOOOO! ¿COMO PUDISTE DARLE AL NO?</h1> <br> <img src="https://cdn.memegenerator.es/imagenes/memes/full/27/85/27851711.jpg">'
 });
