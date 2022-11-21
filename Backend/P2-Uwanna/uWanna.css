@@ -1,0 +1,22 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div-title{
+    height: 500px;
+}
+
+.btnSi{
+    background-color: red;
+    font-size: 50px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button :hover{
+    position: relative;
+    
+}
