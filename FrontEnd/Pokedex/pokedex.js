@@ -2,11 +2,18 @@ const fetchPokemon = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeName = pokeNameInput.value;
     pokeName = pokeName.toLowerCase();
+    pokeImage("images\\pokeball.gif");
+    displayPokeName(null,null,null,null);
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("./pokemon-sad.gif")
+            pokeImage("images\\char-sad.gif");
+            let pkmnName = "No pokemon found";
+            let pkmnTypes = null;
+            let pkmnWeight = null;
+            let pkmnHeight = null;
+            displayPokeName(pkmnName,pkmnHeight,pkmnWeight,pkmnTypes);
         }
         else {
             return res.json();
@@ -16,9 +23,9 @@ const fetchPokemon = () => {
             console.log(data);
             let pokeImg = data.sprites.front_default;
             let pkmnName = "No." + data.id + " " + data.name[0].toUpperCase() + data.name.slice(1);
+            let pkmnTypes = data.types;
             let pkmnWeight = data.weight/10;
             let pkmnHeight = data.height/10;
-            let pkmnTypes = data.types;
             pokeImage(pokeImg);
                         
             if(pkmnTypes.length === 1){
@@ -43,7 +50,14 @@ const displayPokeName = (name,height,weight,types) => {
     const pkmnWeight = document.getElementById("pkmnWeight") ;
     const pkmnTypes = document.getElementById("pkmnTypes") ;
     pkmnName.innerHTML = name;
-    pkmnHeight.innerHTML ="<br>Height: " + height + " m";
-    pkmnWeight.innerHTML = "<br> Weight: "+ weight + " kg";
-    pkmnTypes.innerHTML = "<br>" + types;
+    if (height === null && weight === null){
+        pkmnHeight.innerHTML ="";
+        pkmnWeight.innerHTML = "";
+        pkmnTypes.innerHTML = "";
+    }else{
+        pkmnHeight.innerHTML ="<br>Height: " + height + " m";
+        pkmnWeight.innerHTML = "<br> Weight: "+ weight + " kg";
+        pkmnTypes.innerHTML = "<br>" + types;
+    }
+    
 }

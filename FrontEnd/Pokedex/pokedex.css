@@ -17,6 +17,12 @@
     justify-content: center;
     align-items:center;
     border-radius: 30px;
+    border-left: 5px;
+    border-top: 5px;
+    border-bottom: 1px;
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
 }
 
 .div-pokeData{
@@ -28,6 +34,12 @@
     align-items:center;
     border-radius: 30px;
     flex-direction: column;
+    border-left: 5px;
+    border-top: 1px;
+    border-bottom: 5px;
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
 }
 
 .div-displayImg{
@@ -47,7 +59,7 @@
 .div-displayData{
     background-color: white;
     height:200px ;
-    width:250px ;
+    width:300px ;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -72,4 +84,86 @@
     position: relative;
     display: flex;
     border-radius: 20px;
+}
+
+@media  (max-width: 600px) {
+
+  
+    .div-pokeImg{
+        background-color: red;
+        height: 250px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 20px;
+        border-left: 5px;
+        border-top: 5px;
+        border-bottom: 1px;
+        border-right: 1px;
+        border-color: black;
+        border-style: solid;
+    }
+    
+    .div-pokeData{
+        background-color: red;
+        height: 250px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 20px;
+        flex-direction: column;
+        border-left: 5px;
+        border-top: 1px;
+        border-bottom: 5px;
+        border-right: 1px;
+        border-color: black;
+        border-style: solid;
+    }
+    
+    .div-displayImg{
+        background-color: white;
+        height:150px ;
+        width:200px ;
+        display: flex;
+        justify-content: center;
+        border: 15px;
+        border-left: 15px;
+        border-right: 15px;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 20px;
+    }
+    
+    .div-displayData{
+        background-color: white;
+        height:150px ;
+        width:200px ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between;
+        border: 10px;
+        border-left: 15px;
+        border-right: 15px;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 20px;
+    }
+    
+    .lb-pkmnName{
+        font-size: 11pt;
+        font-style: italic;
+        color: #534949da;
+    }
+    
+    .pkmnImg{
+        height:150px ;
+        width:150px ;
+        position: relative;
+        display: flex;
+        
+    }
+    
 }
