@@ -1,41 +1,50 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const FormTodo = props => {
     const [description, setDescription] = useState("");
     const {addItem} = props;
 
-    const handleSubmit = e => {
+    const handleSubmit = e =>  {
         e.preventDefault();
-        console.log(description);
-
+        console.log(description)
+        
         addItem({
-            done:false,
-            id:(new Date()).toString(),
+            done: false,
+            id: (new Date()).toString(),
             description
         });
 
         setDescription("");
     }
 
-    return(
+    return (
         <form onSubmit={handleSubmit}>
             <div className="todo-list">
-                <div className="input">
-                    <input 
+                <div className="file-input">
+                    <input
                         type="text"
                         className="text"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
-                    <button 
-                        className="blutton-blue"
-                        disabled={description ? "":"disabled"}
-                    >Agregar tarea</button>
+                    <button
+                        className="button pink"
+                        disabled={description ? "" : "disabled"}
+                    /*
+                    Lo mismo:
+                    if (Descripcion == "") {
+                        disabled="disabled"
+                    } else {
+                        disabled=""
+                    }
+                    */
+                    >
+                        Agregar tarea
+                    </button>
                 </div>
             </div>
         </form>
-    )
+    );
 }
 
-export default FormTodo
+export default FormTodo;

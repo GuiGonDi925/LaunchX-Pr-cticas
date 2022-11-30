@@ -1,23 +1,20 @@
-import React from "react";
-import { useState } from "react";
-import FormTodo from "./FormTodo";
-import TaskList from "./TaskList";
+import React, { useState } from "react";
+import FormTodo from './FormTodo';
+import TaskList from './TaskList';
 
 const Container = () => {
     const [list, setList] = useState([]);
 
     const addItem = addItem => {
-        setList([...list,addItem])
-
+        setList([...list, addItem])
     };
 
-    return(
+    return (
         <div>
-            
-            <FormTodo addItem = {addItem} />
-            <TaskList list = {list} setList = {setList}/>
+            <FormTodo addItem={addItem}/>
+            <TaskList list={list} setList={setList}/>
         </div>
-    )
+    );
 }
 
-export default Container;
+export default Container
