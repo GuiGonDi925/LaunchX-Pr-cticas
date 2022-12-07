@@ -1,0 +1,43 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+  background-color: rgb(13, 132, 236);
+  color: white;
+  font-size: 50px;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+
+}
+
+.div-results{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-numbers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lb-result{
+  text-align: right;
+  height: 70px;
+  width: 800px;
+  background-color: beige;
+  color: black;
+  font-size: 50px;
+}
+
+.lb-operation{
+  text-align: left;
+  height: 70px;
+  width: 200px;
+  background-color: beige;
+  color: black;
+  font-size: 50px;
+}
